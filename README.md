@@ -10,7 +10,7 @@ ColorUps is a simple graphic based tool that tracks daily work status for constr
 
 #### Info  
 - Using: Foundation, jQuery, Firebase
-- Runs on server throught ```index.html```
+- Runs on server through ```index.html```
 <br>
 <br>
 
