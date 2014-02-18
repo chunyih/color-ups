@@ -1,0 +1,197 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+div.row { max-width: none; }
+div.small-12, div.large-12 { max-width: 768px; }
+div.alertArea {
+    padding-top: 10px;
+    height: 0px; /*145*/
+}
+div.dwgArea {
+    height: 920px;
+}
+div.divider {
+    width: auto;
+    border-top: 1px solid #e7e7e7; 
+}
+span.glyphicon {
+    top: 0;
+    z-index: 10;
+}
+
+/* ============================
+    Title
+=============================== */
+.goback, .commitConfirm, .options, .brandLogo {float:left;}
+div.titleWrapper {
+    height: 110px;
+    text-align: center;
+    background-image:url('pic/CU_Gray-and-Two-Orange.png');
+    background-repeat: no-repeat;
+}
+div.rowWrapperTop {
+    /*height: 70px;*/
+    padding-left: 8px;
+}
+div.rowWrapperTop   { margin-top: 20px; width: 769px; }
+div.rowWrapper      { margin-top: 76px; font-size: 22px; width: 769px; }
+div.brandLogo {
+    background-image:url('pic/CU_Logo-Titlebar.png');
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+}
+span.icon {
+    font-size: 32px;
+    color: rgb(5, 5, 5);
+    margin-top: 1px;
+}
+.brandLogo {
+    float: right;
+    margin-right: 25px;
+}
+.options {
+    display: none;
+    float: right;
+    margin-right: 40px;
+}
+.commitConfirm {
+    display: none;
+    float: right;
+    margin-right: 40px;
+}
+.goback { margin-left: 25px; }
+.leftMsg, .centerMsg, .rightMsg { 
+    height: 34px;
+    float: left; 
+}
+.leftMsg   {text-align: left; padding-left: 10px; width: 215px;}
+.centerMsg {text-align: center; width: 1px;}
+.rightMsg  {text-align: right; padding-right: 13px; width: 553px;}
+
+/* ============================
+    Dwg Area
+=============================== */
+div.dwgArea {
+    /*background-color: gray;*/
+    padding-top: 20px;
+    padding-left: 10px;
+}
+div.dwg { 
+    background-image:url('pic/CU_LevelandDisciplineSelction.png');
+    background-repeat: no-repeat;
+    height: 1022px;
+}
+div.area1 {
+    position: absolute;
+    top: 408px;
+    left: 43px;
+    height: 330px;
+    width: 200px;
+}
+
+/* ============================
+    Dwg Hilight
+=============================== */
+.gray   { background: gray;   }
+.commit { background: yellow; }
+.done   { background: green;  }
+
+
+/* ============================
+    Alert Area
+=============================== */
+
+
+/* ============================
+    Pop Up Message
+=============================== */
+label { font-size: 1rem; }
+
+/* ============================
+    2. Content Area
+=============================== */
+div.weightContentArea {
+    background-image:url('pic/weightHis.png');
+    background-repeat: no-repeat;
+    height: 448px;
+}
+div.pressureContentArea {
+    background-image:url('pic/pressureHis.png');
+    background-repeat: no-repeat;
+    height: 448px;
+}
+
+
+/* ============================
+    3. Chat
+=============================== */
+div.profileArea {
+    margin: 30px 0 10px 0;
+}
+div.profilePic {
+    width: 70px;
+    height: 70px;
+    margin-left: 15px;
+    border-radius: 50%;
+}
+div.profilePic1 { background-image:url('pic/profilePic1.jpg'); }
+div.profilePic2 { background-image:url('pic/profilePic2.jpg'); }
+div.profilePic3 { background-image:url('pic/profilePic3.jpg'); }
+div.profilePic4 { background-image:url('pic/profilePic4.jpg'); }
+
+div.profileTitle {
+    float: left !important;
+    margin-top: 19px;
+    font-weight: bold;
+    font-size: 20px;
+}
+textarea {
+    font-size: 20px;
+    height: 120px;
+    resize: none;
+    vertical-align: top; 
+    transition: height 0.2s;
+    -webkit-transition: height 0.2s; 
+    -moz-transition: height 0.2s;
+}
+
+
+/* ============================
+    Effects
+=============================== */
+.blink {
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 2;
+}
+
+@-moz-keyframes blinker {  /* Decimal not necessary, 0 and 1 is enough */
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+.red {
+    color: red;
+}
+
+
+

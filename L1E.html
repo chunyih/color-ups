@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>APP Demo</title>
+    <script src='https://cdn.firebase.com/v0/firebase.js'></script>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-font-badge.min.css" rel="stylesheet" type="text/css">
+    <!-- jQueryUI -->
+    <!-- <link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css"> -->
+    <!-- Foundation -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/foundation.css" />
+    <!-- CSS -->
+    <link href="sheet_style.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-45643418-1', 'cywork.net');
+      ga('send', 'pageview');
+
+    </script>
+</head>
+
+<body>
+    <!-- Title -->
+    <div class="row titleWrapper">
+        <div class="rowWrapperTop">
+            <div class="goback"><span class="glyphicon glyphicon-chevron-left icon"></span></div>
+
+            <div class="brandLogo"></div>
+            <div class="options">
+                <a href="#" data-reveal-id="myModal"><span class="glyphicon glyphicon-list icon"></span></a>
+            </div>
+            <div class="commitConfirm"><span class="glyphicon glyphicon-ok icon"></span></div>
+        </div>
+
+
+        <div class="rowWrapper">
+            <div class="leftMsg"><p>LEVEL 1 - AREA E</p></div>
+            <div class="centerMsg"><p></p></div>
+            <div class="rightMsg"><p></p></div>
+        </div>
+    </div>
+    
+    <!-- Info Area -->
+    <div class="small-12 large-12 columns dwgArea">
+        <div class="dwg">
+            <div class="gridRow gridRow1">
+                <div class="areaGrid g1" id="g1"></div>
+                <div class="areaGrid g2" id="g2"></div>
+                <div class="areaGrid g3" id="g3"></div>
+                <div class="areaGrid g4" id="g4"></div>
+                <div class="areaGrid g5" id="g5"></div>
+                <div class="areaGrid g6" id="g6"></div> 
+            </div>
+
+            <div class="gridRow gridRow2">
+                <div class="areaGrid g7" id="g7"></div>
+                <div class="areaGrid g8" id="g8"></div>
+                <div class="areaGrid g9" id="g9"></div>
+                <div class="areaGrid g10" id="g10"></div>
+                <div class="areaGrid g11" id="g11"></div>
+                <div class="areaGrid g12" id="g12"></div>
+            </div>
+
+            <div class="gridRow gridRow3">
+                <div class="areaGrid g13" id="g13"></div>
+                <div class="areaGrid g14" id="g14"></div>
+                <div class="areaGrid g15" id="g15"></div>
+                <div class="areaGrid g16" id="g16"></div>
+                <div class="areaGrid g17" id="g17"></div>
+                <div class="areaGrid g18" id="g18"></div>
+            </div>
+
+            <div class="gridRow gridRow4">
+                <div class="areaGrid g19" id="g19"></div>
+                <div class="areaGrid g20" id="g20"></div>
+                <div class="areaGrid g21" id="g21"></div>
+                <div class="areaGrid g22" id="g22"></div>
+                <div class="areaGrid g23" id="g23"></div>
+                <div class="areaGrid g24" id="g24"></div>
+            </div>
+
+            <div class="gridRow gridRow5">
+                <div class="areaGrid g25" id="g25"></div>
+                <div class="areaGrid g26" id="g26"></div>
+                <div class="areaGrid g27" id="g27"></div>
+                <div class="areaGrid g28" id="g28"></div>
+                <div class="areaGrid g29" id="g29"></div>
+                <div class="areaGrid g30" id="g30"></div>
+            </div>
+
+            <div class="gridRow gridRow6">
+                <div class="areaGrid g31" id="g31"></div>
+                <div class="areaGrid g32" id="g32"></div>
+                <div class="areaGrid g33" id="g33"></div>
+                <div class="areaGrid g34" id="g34"></div>
+                <div class="areaGrid g35" id="g35"></div>
+                <div class="areaGrid g36" id="g36"></div>
+            </div>
+
+            <div class="gridRow gridRow7">
+                <div class="areaGrid g37" id="g37"></div>
+                <div class="areaGrid g38" id="g38"></div>
+                <div class="areaGrid g39" id="g39"></div>
+                <div class="areaGrid g40" id="g40"></div>
+                <div class="areaGrid g41" id="g41"></div>
+                <div class="areaGrid g42" id="g42"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+<div id="myModal" class="reveal-modal xlarge">
+    <h2>Options:</h2>
+    <label><input type="checkbox" name="checkbox" value="value" class="adminMode" id="adminMode"> Admin Mode</label>
+    <br>
+    <p>Note:</p>
+    <div class="row chatArea">
+        <div class="columns">
+            <textarea id="msg1" placeholder="Enter message here..">Room 126 issue pending. Contact GC.</textarea>
+        </div>
+    </div>
+    <a class="close-reveal-modal">&#215;</a>
+</div>
+
+
+
+    <script src="js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="https://apigee.com/usergrid/sdk/usergrid.0.10.5.js"></script>
+    <script src="js/jquery.autosize.min.js"></script>
+    <!--<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>-->
+    <script src="js/vendor/custom.modernizr.js"></script>
+    <script src="js/foundation/foundation.js"></script>
+    <script src="js/foundation/foundation.alerts.js"></script>
+    <script src="js/foundation/foundation.clearing.js"></script>
+    <script src="js/foundation/foundation.cookie.js"></script>
+    <script src="js/foundation/foundation.dropdown.js"></script>
+    <script src="js/foundation/foundation.forms.js"></script>
+    <script src="js/foundation/foundation.joyride.js"></script>
+    <script src="js/foundation/foundation.magellan.js"></script>
+    <script src="js/foundation/foundation.orbit.js"></script>
+    <script src="js/foundation/foundation.placeholder.js"></script>
+    <script src="js/foundation/foundation.reveal.js"></script>
+    <script src="js/foundation/foundation.section.js"></script>
+    <script src="js/foundation/foundation.tooltips.js"></script>
+    <script src="js/foundation/foundation.topbar.js"></script>
+    <script src="js/foundation/foundation.interchange.js"></script>
+    <script>
+        $(document).foundation();
+    </script> 
+
+    <script src="L1E_script.js"></script>
+    
+</body>
+</html>
