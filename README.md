@@ -1,6 +1,6 @@
 ColorUps
 =========
-#### An Hackathon Project
+#### A Hackathon Project
 
 *AEC (Architecture, Engineering, Construction) Hackathon @Facebook, Menlo Park; Nov. 8-10, 2013*
 
