@@ -20,7 +20,6 @@ sheetData.once('value', function(snapshot) { // <=========== load mode when firs
     }    
 });
 
-
 sheetData.on('value', function(snapshot) {
     var object = snapshot.val();
     var isChecked = $('#adminMode').is(':checked');
@@ -92,10 +91,6 @@ $("div.commitConfirm").click( function(){
     $(".rightMsg > p").fadeIn("slow");
 
 });
-
-
-
-
 
 // Load Data & Live Update
 areaData.on('value', function(snapshot) {
@@ -177,7 +172,6 @@ $(".areaGrid").click( function(){
     else { console.log("mode: "+mode) }
 });
 
-
 $(".goback").click( function(){
     window.location = 'L1.html';
     return false;
@@ -188,10 +182,7 @@ $(".brandLogo").click( function(){
     return false;
 });
 
-
-
 // control from reset.html
-
 $(".resetCommit").click( function (e){
     e.preventDefault();
     sheetData.update({"commitPermit": 1});   
